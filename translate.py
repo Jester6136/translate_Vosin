@@ -1,7 +1,7 @@
 from src.main import Seq2SeqTranslator
 model_names = {
-    'envi': 'model\envi',
-    'zhvi': 'model\zhvi',
+    'envi': 'model/envi',
+    'zhvi': 'model/zhvi',
 }
 translator = Seq2SeqTranslator(model_names, device='cpu',batch_size=512)
 
