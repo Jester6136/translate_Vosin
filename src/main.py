@@ -6,7 +6,7 @@ import nltk
 nltk.download('punkt')
 
 class Seq2SeqTranslator:
-    def __init__(self, model_names, device='cpu',batch_size=512):
+    def __init__(self, model_names, device='cpu',batch_size=64):
         self.tokenizers = {}
         self.models = {}
         self.batch_size = batch_size

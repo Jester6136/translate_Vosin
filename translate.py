@@ -3,7 +3,7 @@ model_names = {
     'envi': 'model/envi',
     'zhvi': 'model/zhvi',
 }
-translator = Seq2SeqTranslator(model_names, device='cpu',batch_size=512)
+translator = Seq2SeqTranslator(model_names, device='cpu',batch_size=1)
 
 def translate(language:str,query:str):
     return translator.translate(language, query)
